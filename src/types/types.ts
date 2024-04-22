@@ -5,3 +5,7 @@ export type Monster = {
   legs: number;
   strength: number;
 };
+
+export type GlobalState = {
+  monsters: Monster[];
+};
