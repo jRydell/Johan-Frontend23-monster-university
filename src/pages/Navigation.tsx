@@ -1,9 +1,9 @@
 import { NavLink, Outlet } from "react-router-dom";
 
-export const Root = () => {
+export const Navigation = () => {
   return (
     <>
-      <nav className="Root">
+      <nav className="Navigation">
         <NavLink to="/Start">Start</NavLink>
         <NavLink to="/Monsters">Monsters</NavLink>
         <NavLink to="/AddMonster">Add Monster</NavLink>
