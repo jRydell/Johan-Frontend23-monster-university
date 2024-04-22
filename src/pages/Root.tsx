@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 export const Root = () => {
   return (
@@ -8,6 +8,9 @@ export const Root = () => {
         <NavLink to="/Monsters">Monsters</NavLink>
         <NavLink to="/AddMonster">Add Monster</NavLink>
       </nav>
+      <section>
+        <Outlet />
+      </section>
     </>
   );
 };
