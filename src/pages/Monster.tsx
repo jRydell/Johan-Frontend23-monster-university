@@ -17,9 +17,9 @@ export const Monster = () => {
 
   return (
     <div>
-      <h2>
+      <h3>
         {selectedMonster.first_name} {selectedMonster.last_name}
-      </h2>
+      </h3>
       <p>
         <strong>Description:</strong> {selectedMonster.description}
       </p>
