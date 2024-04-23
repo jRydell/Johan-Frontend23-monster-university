@@ -10,9 +10,13 @@
         "magic": ["Light manipulation", "Teleportation"]
       },
       "origin": "Cloudtopia",
-      "num_horns": 2,
       "num_eyes": 4,
-      "num_arms": 2
+      "num_arms": 2,
+      "num_horns": 2,
+      "num_wings": 0,
+      "num_tentacles": 0,
+      "num_mouths": 0,
+      "num_tails": 0
     },
     {
       "id": "2",
@@ -24,9 +28,13 @@
         "magic": ["Illusions", "Flight spells"]
       },
       "origin": "Skyhaven",
-      "num_wings": 2,
       "num_eyes": 3,
-      "num_arms": 2
+      "num_arms": 2,
+      "num_horns": 0,
+      "num_wings": 2,
+      "num_tentacles": 0,
+      "num_mouths": 0,
+      "num_tails": 0
     },
     {
       "id": "3",
@@ -38,9 +46,13 @@
         "magic": ["Water manipulation", "Ink spells"]
       },
       "origin": "Aqualantis",
-      "num_tentacles": 8,
       "num_eyes": 2,
-      "num_mouths": 1
+      "num_arms": 0,
+      "num_horns": 0,
+      "num_wings": 0,
+      "num_tentacles": 8,
+      "num_mouths": 1,
+      "num_tails": 0
     },
     {
       "id": "4",
@@ -52,9 +64,12 @@
         "magic": ["Fire manipulation", "Heat spells"]
       },
       "origin": "Infernia",
-      "num_horns": 1,
       "num_eyes": 2,
       "num_arms": 2,
+      "num_horns": 1,
+      "num_wings": 0,
+      "num_tentacles": 0,
+      "num_mouths": 0,
       "num_tails": 1
     },
     {
@@ -67,9 +82,13 @@
         "magic": ["Moonlight manipulation", "Dreamweaving"]
       },
       "origin": "Lunaria",
-      "num_wings": 4,
       "num_eyes": 2,
-      "num_arms": 2
+      "num_arms": 2,
+      "num_horns": 0,
+      "num_wings": 4,
+      "num_tentacles": 0,
+      "num_mouths": 0,
+      "num_tails": 0
     },
     {
       "id": "6",
@@ -83,6 +102,10 @@
       "origin": "Joyville",
       "num_eyes": 2,
       "num_arms": 2,
+      "num_horns": 0,
+      "num_wings": 0,
+      "num_tentacles": 0,
+      "num_mouths": 0,
       "num_tails": 1
     },
     {
@@ -95,9 +118,12 @@
         "magic": ["Earth manipulation", "Barrier spells"]
       },
       "origin": "Thornridge",
-      "num_horns": 2,
       "num_eyes": 3,
       "num_arms": 4,
+      "num_horns": 2,
+      "num_wings": 0,
+      "num_tentacles": 0,
+      "num_mouths": 0,
       "num_tails": 1
     },
     {
@@ -112,6 +138,10 @@
       "origin": "Bubbleopolis",
       "num_eyes": 2,
       "num_arms": 2,
+      "num_horns": 0,
+      "num_wings": 0,
+      "num_tentacles": 0,
+      "num_mouths": 0,
       "num_tails": 1
     },
     {
@@ -124,9 +154,12 @@
         "magic": ["Earth manipulation", "Vibration spells"]
       },
       "origin": "Quakevale",
-      "num_horns": 2,
       "num_eyes": 2,
       "num_arms": 2,
+      "num_horns": 2,
+      "num_wings": 0,
+      "num_tentacles": 0,
+      "num_mouths": 0,
       "num_tails": 1
     },
     {
@@ -141,7 +174,11 @@
       "origin": "Shadewood",
       "num_eyes": 2,
       "num_arms": 0,
-      "num_tentacles": 6
+      "num_horns": 0,
+      "num_wings": 0,
+      "num_tentacles": 6,
+      "num_mouths": 0,
+      "num_tails": 0
     }
   ]
 }
