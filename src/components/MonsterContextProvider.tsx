@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import { reducer } from "../state/reducer";
+import { reducer } from "../state/Reducer";
 import {
   initialMonsterState,
   MonsterContext,
