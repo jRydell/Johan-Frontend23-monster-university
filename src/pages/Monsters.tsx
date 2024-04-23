@@ -13,12 +13,12 @@ export const Monsters = () => {
             state.monsters.map((monster) => (
               <li key={monster.first_name}>
                 <NavLink
-                  to={`monsters/${monster.first_name}`}
+                  to={`/monsters/${monster.first_name}`}
                   style={({ isActive }) =>
                     isActive ? { color: "blue" } : { color: "" }
                   }
                 >
-                  {monster.first_name} {monster.last_name}{" "}
+                  {monster.first_name} {monster.last_name}
                 </NavLink>
               </li>
             ))
