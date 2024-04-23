@@ -4,9 +4,30 @@ export const Navigation = () => {
   return (
     <>
       <nav className="Navigation">
-        <NavLink to="/">Start</NavLink>
-        <NavLink to="/Monsters">Monsters</NavLink>
-        <NavLink to="/AddMonster">Add Monster</NavLink>
+        <NavLink
+          to="/"
+          style={({ isActive }) =>
+            isActive ? { color: "blue" } : { color: "black" }
+          }
+        >
+          Start
+        </NavLink>
+        <NavLink
+          to="/Monsters"
+          style={({ isActive }) =>
+            isActive ? { color: "blue" } : { color: "black" }
+          }
+        >
+          Monsters
+        </NavLink>
+        <NavLink
+          to="/AddMonster"
+          style={({ isActive }) =>
+            isActive ? { color: "blue" } : { color: "black" }
+          }
+        >
+          Add Monster
+        </NavLink>
       </nav>
       <section>
         <Outlet />

@@ -15,7 +15,7 @@ export const Monsters = () => {
                 <NavLink
                   to={`/monsters/${monster.first_name}`}
                   style={({ isActive }) =>
-                    isActive ? { color: "blue" } : { color: "" }
+                    isActive ? { color: "blue" } : { color: "black" }
                   }
                 >
                   {monster.first_name} {monster.last_name}
