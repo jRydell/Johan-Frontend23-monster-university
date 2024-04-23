@@ -7,17 +7,13 @@ export const Monsters = () => {
   const { state, dispatch } = useContext(MonsterContext);
   return (
     <section className="Monsters">
+      <h2>All Monsters</h2>
       <ul>
         {state.monsters.length ? (
           state.monsters.map((monster) => (
             <li key={monster.id}>
-              <NavLink
-                to={`monster/${monster.id}`}
-                className={({ isActive, isPending }) =>
-                  isActive ? "active" : isPending ? "pending" : ""
-                }
-              >
-                {monster.first_name}{" "}
+              <NavLink to={`monster/${monster.id}`}>
+                {monster.first_name} {monster.last_name}{" "}
               </NavLink>
             </li>
           ))

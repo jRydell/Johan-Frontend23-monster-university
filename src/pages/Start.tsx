@@ -1,3 +1,7 @@
 export const Start = () => {
-  return <div>Monster University!</div>;
+  return (
+    <div>
+      <h2>Monster Univeristy!</h2>
+    </div>
+  );
 };
