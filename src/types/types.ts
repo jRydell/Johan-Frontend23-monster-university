@@ -4,8 +4,13 @@ export type Monster = {
   eyes: number;
   legs: number;
   strength: number;
+  id: string;
 };
 
-export type GlobalState = {
+export type MonsterState = {
   monsters: Monster[];
 };
+
+export type Action =
+  | { type: "ADD"; payload: Monster }
+  | { type: "REMOVE"; payload: string };

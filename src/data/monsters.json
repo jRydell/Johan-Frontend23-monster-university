@@ -5,84 +5,56 @@
       "hasHorns": false,
       "eyes": 2,
       "legs": 4,
-      "strength": 5
+      "strength": 5,
+      "id": "1"
     },
     {
       "name": "Tome Devourer",
       "hasHorns": false,
       "eyes": 3,
       "legs": 6,
-      "strength": 3
+      "strength": 3,
+      "id": "2"
     },
     {
       "name": "Munching Gobbler",
       "hasHorns": false,
       "eyes": 4,
       "legs": 8,
-      "strength": 2
+      "strength": 2,
+      "id": "3"
     },
     {
       "name": "Maternal Hydra",
       "hasHorns": false,
       "eyes": 6,
       "legs": 12,
-      "strength": 1
+      "strength": 1,
+      "id": "4"
     },
     {
-      "name": "Scholarly Fiend",
-      "hasHorns": false,
+      "name": "Electric Imp",
+      "hasHorns": true,
       "eyes": 2,
       "legs": 2,
-      "strength": 4
+      "strength": 8,
+      "id": "5"
     },
     {
-      "name": "Muscle Mauler",
+      "name": "Crystal Shifter",
       "hasHorns": false,
-      "eyes": 2,
-      "legs": 4,
-      "strength": 5
-    },
-    {
-      "name": "Matriarchal Harpy",
-      "hasHorns": false,
-      "eyes": 4,
-      "legs": 2,
-      "strength": 1
-    },
-    {
-      "name": "Page Ripper",
-      "hasHorns": false,
-      "eyes": 3,
+      "eyes": 8,
       "legs": 6,
-      "strength": 3
+      "strength": 6,
+      "id": "6"
     },
     {
-      "name": "Grime Ghoul",
+      "name": "Shadow Creeper",
       "hasHorns": false,
       "eyes": 2,
       "legs": 4,
-      "strength": 4
-    },
-    {
-      "name": "Scheduler Serpent",
-      "hasHorns": false,
-      "eyes": 2,
-      "legs": 0,
-      "strength": 2
-    },
-    {
-      "name": "Ink Scribe",
-      "hasHorns": false,
-      "eyes": 2,
-      "legs": 0,
-      "strength": 3
-    },
-    {
-      "name": "Recipe Raptor",
-      "hasHorns": false,
-      "eyes": 2,
-      "legs": 2,
-      "strength": 2
+      "strength": 7,
+      "id": "7"
     }
   ]
 }
