@@ -8,6 +8,7 @@ import { Monsters } from "./pages/Monsters";
 import { Navigation } from "./pages/Navigation";
 import { NotFound } from "./pages/NotFound";
 import { Start } from "./pages/Start";
+import { MonsterContextProvider } from "./components/MonsterContextProvider";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <MonsterContextProvider>
+      <RouterProvider router={router} />
+    </MonsterContextProvider>
   </React.StrictMode>
 );

@@ -1,24 +1,32 @@
-export const Monsters = () => {
-  return <div>Monsters!</div>;
-};
+import { useContext } from "react";
+import { MonsterContext } from "../state/MonsterStateContext";
+import { Monster } from "./Monster";
+import { NavLink } from "react-router-dom";
 
-// <section className="Monsters">
-//   {monsters.length ? (
-//     <ul>
-//       {monsters.map((monster: any) => (
-//         <li key={monsters.id}>
-//           <NavLink
-//             to={`monster/${monster.id}`}
-//             className={({ isActive, isPending }) =>
-//               isActive ? "active" : isPending ? "pending" : ""
-//             }
-//           ></NavLink>
-//         </li>
-//       ))}
-//     </ul>
-//   ) : (
-//     <p>
-//       <i>No monsters</i>
-//     </p>
-//   )}
-// </section>
+export const Monsters = () => {
+  const { state, dispatch } = useContext(MonsterContext);
+  return (
+    <section className="Monsters">
+      <ul>
+        {state.monsters.length ? (
+          state.monsters.map((monster) => (
+            <li key={monster.id}>
+              <NavLink
+                to={`monster/${monster.id}`}
+                className={({ isActive, isPending }) =>
+                  isActive ? "active" : isPending ? "pending" : ""
+                }
+              >
+                {monster.first_name}{" "}
+              </NavLink>
+            </li>
+          ))
+        ) : (
+          <p>
+            <i>No monsters</i>
+          </p>
+        )}
+      </ul>
+    </section>
+  );
+};
