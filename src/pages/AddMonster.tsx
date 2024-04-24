@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { MonsterContext } from "../state/MonsterStateContext";
 
 export const AddMonster = () => {
-  const { state, dispatch } = useContext(MonsterContext);
+  const { dispatch } = useContext(MonsterContext);
   const [monster, setMonster] = useState({
     id: "",
     first_name: "",
@@ -77,6 +77,7 @@ export const AddMonster = () => {
               onChange={handleChange}
             />
           </label>
+          <br />
           <label>
             Description:
             <textarea
@@ -85,6 +86,7 @@ export const AddMonster = () => {
               onChange={handleChange}
             />
           </label>
+
           <label>
             Origin:
             <textarea
@@ -93,6 +95,77 @@ export const AddMonster = () => {
               onChange={handleChange}
             />
           </label>
+          <br />
+          <label>
+            Number of eyes:
+            <input
+              type="number"
+              name="num_eyes"
+              value={monster.num_eyes}
+              onChange={handleChange}
+            />
+          </label>
+
+          <label>
+            Number of arms:
+            <input
+              type="number"
+              name="num_arms"
+              value={monster.num_arms}
+              onChange={handleChange}
+            />
+            <br />
+          </label>
+          <label>
+            Number of horns:
+            <input
+              type="number"
+              name="num_horns"
+              value={monster.num_horns}
+              onChange={handleChange}
+            />
+          </label>
+
+          <label>
+            Number of wings:
+            <input
+              type="number"
+              name="num_wings"
+              value={monster.num_wings}
+              onChange={handleChange}
+            />
+          </label>
+          <br />
+          <label>
+            Number of tentacles:
+            <input
+              type="number"
+              name="num_tentacles"
+              value={monster.num_tentacles}
+              onChange={handleChange}
+            />
+          </label>
+
+          <label>
+            Number of mouths:
+            <input
+              type="number"
+              name="num_mouths"
+              value={monster.num_mouths}
+              onChange={handleChange}
+            />
+          </label>
+          <br />
+          <label>
+            Number of tails:
+            <input
+              type="number"
+              name="num_tails"
+              value={monster.num_tails}
+              onChange={handleChange}
+            />
+          </label>
+
           <button type="submit">Add Monster</button>
         </form>
       </div>
