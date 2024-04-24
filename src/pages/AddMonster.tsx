@@ -22,6 +22,13 @@ export const AddMonster = () => {
     num_tails: 0,
   });
 
+  const handleChange: React.ChangeEventHandler<
+    HTMLInputElement | HTMLTextAreaElement
+  > = (e) => {
+    const { name, value } = e.target;
+    setMonster({ ...monster, [name]: value });
+  };
+
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
     // Dispatch an action to add the new monster
@@ -54,16 +61,31 @@ export const AddMonster = () => {
         <form onSubmit={handleSubmit}>
           <label>
             First name:
-            <input type="text" name={"first_name"} value={monster.first_name} />
+            <input
+              type="text"
+              name={"first_name"}
+              value={monster.first_name}
+              onChange={handleChange}
+            />
           </label>
           <label>
             Last name:
-            <input type="text" name={"last_name"} value={monster.last_name} />
+            <input
+              type="text"
+              name={"last_name"}
+              value={monster.last_name}
+              onChange={handleChange}
+            />
           </label>
           <label>
             Description:
-            <textarea name="description" value={monster.description} />
+            <textarea
+              name="description"
+              value={monster.description}
+              onChange={handleChange}
+            />
           </label>
+          <button type="submit">Add Monster</button>
         </form>
       </div>
     </>
