@@ -85,6 +85,14 @@ export const AddMonster = () => {
               onChange={handleChange}
             />
           </label>
+          <label>
+            Origin:
+            <textarea
+              name="origin"
+              value={monster.origin}
+              onChange={handleChange}
+            />
+          </label>
           <button type="submit">Add Monster</button>
         </form>
       </div>
