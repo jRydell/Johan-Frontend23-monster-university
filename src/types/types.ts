@@ -1,4 +1,4 @@
-type Monster = {
+export type Monster = {
   id: string;
   first_name: string;
   last_name: string;
@@ -10,11 +10,11 @@ type Monster = {
   origin: string;
   num_eyes: number;
   num_arms: number;
-  num_horns?: number;
-  num_wings?: number;
-  num_tentacles?: number;
-  num_mouths?: number;
-  num_tails?: number;
+  num_horns: number;
+  num_wings: number;
+  num_tentacles: number;
+  num_mouths: number;
+  num_tails: number;
 };
 
 export type MonsterState = {
