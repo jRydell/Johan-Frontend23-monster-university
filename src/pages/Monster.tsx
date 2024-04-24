@@ -41,37 +41,37 @@ export const Monster = () => {
       </p>
       {selectedMonster.num_eyes > 0 && (
         <p>
-          <strong>Eyes:</strong> {selectedMonster.num_eyes}
+          <strong>Number of eyes:</strong> {selectedMonster.num_eyes}
         </p>
       )}
       {selectedMonster.num_arms > 0 && (
         <p>
-          <strong>Arms:</strong> {selectedMonster.num_arms}
+          <strong>Number of arms:</strong> {selectedMonster.num_arms}
         </p>
       )}
       {selectedMonster.num_horns > 0 && (
         <p>
-          <strong>Horns:</strong> {selectedMonster.num_horns}
+          <strong>Number of horns:</strong> {selectedMonster.num_horns}
         </p>
       )}
       {selectedMonster.num_wings > 0 && (
         <p>
-          <strong>Wings:</strong> {selectedMonster.num_wings}
+          <strong>Number of wings:</strong> {selectedMonster.num_wings}
         </p>
       )}
       {selectedMonster.num_tentacles > 0 && (
         <p>
-          <strong>Tentacles:</strong> {selectedMonster.num_tentacles}
+          <strong>Number of tentacles:</strong> {selectedMonster.num_tentacles}
         </p>
       )}
       {selectedMonster.num_mouths > 0 && (
         <p>
-          <strong>Mouths:</strong> {selectedMonster.num_mouths}
+          <strong>Number of mouths:</strong> {selectedMonster.num_mouths}
         </p>
       )}
       {selectedMonster.num_tails > 0 && (
         <p>
-          <strong>Tails:</strong> {selectedMonster.num_tails}
+          <strong>Number of tails:</strong> {selectedMonster.num_tails}
         </p>
       )}
     </div>

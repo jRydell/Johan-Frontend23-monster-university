@@ -18,14 +18,14 @@ export const Start = () => {
   return (
     <div>
       <h2>Monster University!</h2>
-      <p>Total monsters: {totalMonsters}</p>
-      <p>Total eyes: {totalEyes}</p>
-      <p>Total arms: {totalArms}</p>
-      <p>Total horns: {totalHorns}</p>
-      <p>Total wings: {totalWings}</p>
-      <p>Total tentacles: {totalTentacles}</p>
-      <p>Total mouths: {totalMouths}</p>
-      <p>Total tails: {totalTails}</p>
+      <p>Total number of monsters: {totalMonsters}</p>
+      <p>Total number of eyes: {totalEyes}</p>
+      <p>Total number of arms: {totalArms}</p>
+      <p>Total number of horns: {totalHorns}</p>
+      <p>Total number of wings: {totalWings}</p>
+      <p>Total number of tentacles: {totalTentacles}</p>
+      <p>Total number of mouths: {totalMouths}</p>
+      <p>Total number of tails: {totalTails}</p>
     </div>
   );
 };
