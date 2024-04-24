@@ -18,7 +18,7 @@ export const Navigation = () => {
             isActive ? { color: "blue" } : { color: "black" }
           }
         >
-          Monsters
+          Monster
         </NavLink>
         <NavLink
           to="/AddMonster"
@@ -26,7 +26,7 @@ export const Navigation = () => {
             isActive ? { color: "blue" } : { color: "black" }
           }
         >
-          Add Monster
+          Add monster
         </NavLink>
       </nav>
       <section>

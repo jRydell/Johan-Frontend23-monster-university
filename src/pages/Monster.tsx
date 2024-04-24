@@ -39,12 +39,30 @@ export const Monster = () => {
       <p>
         <strong>Origin:</strong> {selectedMonster.origin}
       </p>
-      <p>
-        <strong>Number of Eyes:</strong> {selectedMonster.num_eyes}
-      </p>
-      <p>
-        <strong>Number of Arms:</strong> {selectedMonster.num_arms}
-      </p>
+      {selectedMonster.num_eyes !== undefined &&
+        selectedMonster.num_eyes > 0 && (
+          <p>
+            <strong>Number of Eyes:</strong> {selectedMonster.num_eyes}
+          </p>
+        )}
+      {selectedMonster.num_arms !== undefined &&
+        selectedMonster.num_arms > 0 && (
+          <p>
+            <strong>Number of Arms:</strong> {selectedMonster.num_arms}
+          </p>
+        )}
+      {selectedMonster.num_horns !== undefined &&
+        selectedMonster.num_horns > 0 && (
+          <p>
+            <strong>Number of Horns:</strong> {selectedMonster.num_horns}
+          </p>
+        )}
+      {selectedMonster.num_wings !== undefined &&
+        selectedMonster.num_wings > 0 && (
+          <p>
+            <strong>Number of Wings:</strong> {selectedMonster.num_wings}
+          </p>
+        )}
     </div>
   );
 };
