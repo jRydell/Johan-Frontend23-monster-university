@@ -9,7 +9,7 @@ export const reducer = (state: MonsterState, action: Action): MonsterState => {
     case "REMOVE":
       return {
         monsters: state.monsters.filter(
-          (monster) => monster.id !== action.payload
+          (monster) => monster.first_name !== action.payload.first_name
         ),
       };
     default:

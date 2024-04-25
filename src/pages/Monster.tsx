@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 export const Monster = () => {
   const { monsterID } = useParams<{ monsterID: string }>();
-  const { state } = useContext(MonsterContext);
+  const { dispatch, state } = useContext(MonsterContext);
 
   // Find the selected monster
   const selectedMonster = state.monsters.find(
@@ -15,6 +15,13 @@ export const Monster = () => {
   if (!selectedMonster) {
     return <div>Monster not found!</div>;
   }
+
+  const handleClickDelete = () => {
+    dispatch({
+      type: "REMOVE",
+      payload: { first_name: selectedMonster.first_name },
+    });
+  };
 
   return (
     <div>
@@ -79,6 +86,7 @@ export const Monster = () => {
       <NavLink to={`/monsters/${selectedMonster.first_name}/edit`}>
         Edit
       </NavLink>
+      <button onClick={handleClickDelete}>Delete</button>
     </div>
   );
 };
