@@ -52,7 +52,7 @@ export const AddMonster = () => {
       num_mouths: 0,
       num_tails: 0,
     });
-    navigate("/monsters");
+    navigate(`/monsters/${monster.first_name}`);
   };
 
   return (
