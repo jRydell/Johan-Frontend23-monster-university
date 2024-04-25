@@ -9,7 +9,6 @@ const EditMonster = () => {
   const navigate = useNavigate();
 
   const [monster, setMonster] = useState<Monster>({
-    id: "",
     first_name: "",
     last_name: "",
     description: "",
@@ -63,7 +62,7 @@ const EditMonster = () => {
     dispatch({
       type: "UPDATE",
       payload: {
-        id: monsterID,
+        first_name: monsterID,
         updatedMonster: updatedMonster,
       },
     });

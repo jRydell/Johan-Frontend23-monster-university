@@ -2,12 +2,13 @@ import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { MonsterContext } from "../state/MonsterStateContext";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const Monster = () => {
   const { monsterID } = useParams<{ monsterID: string }>();
   const { dispatch, state } = useContext(MonsterContext);
+  const navigate = useNavigate();
 
-  // Find the selected monster
   const selectedMonster = state.monsters.find(
     (monster) => monster.first_name === monsterID
   );
@@ -21,6 +22,7 @@ export const Monster = () => {
       type: "REMOVE",
       payload: { first_name: selectedMonster.first_name },
     });
+    navigate("/monsters");
   };
 
   return (
@@ -83,6 +85,7 @@ export const Monster = () => {
         </p>
       )}
 
+      <button></button>
       <NavLink to={`/monsters/${selectedMonster.first_name}/edit`}>
         Edit
       </NavLink>
