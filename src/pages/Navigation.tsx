@@ -18,7 +18,7 @@ export const Navigation = () => {
             isActive ? { color: "blue" } : { color: "black" }
           }
         >
-          Monster
+          Monsters
         </NavLink>
         <NavLink
           to="/AddMonster"
