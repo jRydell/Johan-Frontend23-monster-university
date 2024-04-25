@@ -1,7 +1,6 @@
 {
   "monsters": [
     {
-      "id": "1",
       "first_name": "Fuzzy",
       "last_name": "Sparklehorn",
       "description": "A fluffy monster with rainbow-colored fur and sparkling horns.",
@@ -19,7 +18,6 @@
       "num_tails": 0
     },
     {
-      "id": "2",
       "first_name": "Whiskers",
       "last_name": "Glimmerscale",
       "description": "A winged monster with iridescent scales and shimmering eyes.",
@@ -37,7 +35,6 @@
       "num_tails": 0
     },
     {
-      "id": "3",
       "first_name": "Squiggle",
       "last_name": "Tentapuff",
       "description": "A squid-like monster with a puffy body and tentacles covered in soft fuzz.",
@@ -55,7 +52,6 @@
       "num_tails": 0
     },
     {
-      "id": "4",
       "first_name": "Blaze",
       "last_name": "Emberclaw",
       "description": "A fiery monster with flaming mane and ember-covered claws.",
@@ -73,7 +69,6 @@
       "num_tails": 1
     },
     {
-      "id": "5",
       "first_name": "Misty",
       "last_name": "Moonwing",
       "description": "An ethereal monster with translucent wings and a glowing aura.",
@@ -91,7 +86,6 @@
       "num_tails": 0
     },
     {
-      "id": "6",
       "first_name": "Giggles",
       "last_name": "Snugglepuff",
       "description": "A cuddly monster with soft fur and an infectious laugh.",
@@ -109,7 +103,6 @@
       "num_tails": 1
     },
     {
-      "id": "7",
       "first_name": "Spike",
       "last_name": "Razorclaw",
       "description": "A spiky monster with sharp claws and a protective shell.",
@@ -127,7 +120,6 @@
       "num_tails": 1
     },
     {
-      "id": "8",
       "first_name": "Bubbles",
       "last_name": "Glowfin",
       "description": "A bubbly monster with luminescent scales and a bubbly personality.",
@@ -145,7 +137,6 @@
       "num_tails": 1
     },
     {
-      "id": "9",
       "first_name": "Rumble",
       "last_name": "Stonehide",
       "description": "A sturdy monster with rocky skin and seismic powers.",
@@ -163,7 +154,6 @@
       "num_tails": 1
     },
     {
-      "id": "10",
       "first_name": "Wisp",
       "last_name": "Shadowglimmer",
       "description": "A mysterious monster with wispy tendrils and shadowy abilities.",

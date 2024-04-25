@@ -6,7 +6,6 @@ export const AddMonster = () => {
   const { dispatch } = useContext(MonsterContext);
   const navigate = useNavigate();
   const [monster, setMonster] = useState({
-    id: "",
     first_name: "",
     last_name: "",
     description: "",
@@ -37,7 +36,6 @@ export const AddMonster = () => {
     dispatch({ type: "ADD", payload: monster });
     // Clear the form after submission
     setMonster({
-      id: "",
       first_name: "",
       last_name: "",
       description: "",

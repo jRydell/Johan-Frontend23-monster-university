@@ -1,5 +1,4 @@
 export type Monster = {
-  id: string;
   first_name: string;
   last_name: string;
   description: string;
@@ -23,8 +22,8 @@ export type MonsterState = {
 
 export type Action =
   | { type: "ADD"; payload: Monster }
-  | { type: "UPDATE"; payload: { id: string; updatedMonster: Monster } }
-  | { type: "REMOVE"; payload: string };
+  | { type: "UPDATE"; payload: { first_name: string; updatedMonster: Monster } }
+  | { type: "REMOVE"; payload: { first_name: string } };
 
 export type MonsterContextProviderProp = {
   children: React.ReactNode;
