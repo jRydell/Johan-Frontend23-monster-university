@@ -29,11 +29,11 @@ const router = createBrowserRouter([
             path: "/monsters/:monsterID",
             element: <Monster />,
           },
-          {
-            path: "/:monsterID/edit", // Define the route for EditMonster
-            element: <EditMonster />,
-          },
         ],
+      },
+      {
+        path: "/monsters/:monsterID/edit",
+        element: <EditMonster />,
       },
       {
         path: "/addMonster",
