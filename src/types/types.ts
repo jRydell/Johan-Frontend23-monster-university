@@ -23,6 +23,7 @@ export type MonsterState = {
 
 export type Action =
   | { type: "ADD"; payload: Monster }
+  | { type: "UPDATE"; payload: { id: string; updatedMonster: Monster } }
   | { type: "REMOVE"; payload: string };
 
 export type MonsterContextProviderProp = {

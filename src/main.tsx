@@ -8,7 +8,7 @@ import { Monsters } from "./pages/Monsters";
 import { Navigation } from "./pages/Navigation";
 import { NotFound } from "./pages/NotFound";
 import { Start } from "./pages/Start";
-import { EditMonster } from "./pages/EditMonster";
+import EditMonster from "./pages/EditMonster";
 import { MonsterContextProvider } from "./components/MonsterContextProvider";
 
 const router = createBrowserRouter([
