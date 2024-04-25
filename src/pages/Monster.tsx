@@ -1,7 +1,6 @@
 import { useContext } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { MonsterContext } from "../state/MonsterStateContext";
-import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 export const Monster = () => {
@@ -86,9 +85,10 @@ export const Monster = () => {
       )}
 
       <button></button>
-      <NavLink to={`/monsters/${selectedMonster.first_name}/edit`}>
-        Edit
-      </NavLink>
+
+      <button>
+        <Link to={`/monsters/${selectedMonster.first_name}/edit`}>Edit</Link>
+      </button>
       <button onClick={handleClickDelete}>Delete</button>
     </div>
   );
