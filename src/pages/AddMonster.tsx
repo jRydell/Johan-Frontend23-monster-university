@@ -1,8 +1,10 @@
 import { useState, useContext } from "react";
 import { MonsterContext } from "../state/MonsterStateContext";
+import { useNavigate } from "react-router-dom";
 
 export const AddMonster = () => {
   const { dispatch } = useContext(MonsterContext);
+  const navigate = useNavigate();
   const [monster, setMonster] = useState({
     id: "",
     first_name: "",
@@ -52,6 +54,7 @@ export const AddMonster = () => {
       num_mouths: 0,
       num_tails: 0,
     });
+    navigate("/monsters");
   };
 
   return (
