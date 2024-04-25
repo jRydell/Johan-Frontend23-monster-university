@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { MonsterContext } from "../state/MonsterStateContext";
+import { NavLink } from "react-router-dom";
 
 export const Monster = () => {
   const { monsterID } = useParams<{ monsterID: string }>();
@@ -74,6 +75,10 @@ export const Monster = () => {
           <strong>Number of tails:</strong> {selectedMonster.num_tails}
         </p>
       )}
+
+      <NavLink to={`/monsters/${selectedMonster.first_name}/edit`}>
+        Edit
+      </NavLink>
     </div>
   );
 };
