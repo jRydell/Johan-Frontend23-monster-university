@@ -9,7 +9,7 @@ export const Monster = () => {
   const navigate = useNavigate();
 
   const selectedMonster = state.monsters.find(
-    (monster) => monster.first_name === monsterID
+    (monster) => monster.id === monsterID
   );
 
   if (!selectedMonster) {
@@ -19,7 +19,7 @@ export const Monster = () => {
   const handleClickDelete = () => {
     dispatch({
       type: "REMOVE",
-      payload: { first_name: selectedMonster.first_name },
+      payload: { id: selectedMonster.id },
     });
     navigate("/monsters");
   };
@@ -87,7 +87,7 @@ export const Monster = () => {
       <button></button>
 
       <button>
-        <Link to={`/monsters/${selectedMonster.first_name}/edit`}>Edit</Link>
+        <Link to={`/monsters/${selectedMonster.id}/edit`}>Edit</Link>
       </button>
       <button onClick={handleClickDelete}>Delete</button>
     </div>

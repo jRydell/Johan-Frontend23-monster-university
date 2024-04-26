@@ -9,6 +9,7 @@ const EditMonster = () => {
   const navigate = useNavigate();
 
   const [monster, setMonster] = useState<Monster>({
+    id: "",
     first_name: "",
     last_name: "",
     description: "",
@@ -29,7 +30,7 @@ const EditMonster = () => {
   useEffect(() => {
     // Find the selected monster based on monsterID
     const selectedMonster = state.monsters.find(
-      (monster) => monster.first_name === monsterID
+      (monster) => monster.id === monsterID
     );
 
     // If monster is found, populate the form data with its information
@@ -58,11 +59,10 @@ const EditMonster = () => {
 
     console.log("Updated monster:", updatedMonster);
 
-    // Dispatch an action to update the monster data
     dispatch({
       type: "UPDATE",
       payload: {
-        first_name: monsterID,
+        id: monsterID,
         updatedMonster: updatedMonster,
       },
     });

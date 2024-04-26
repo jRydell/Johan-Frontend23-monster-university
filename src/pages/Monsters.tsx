@@ -4,6 +4,7 @@ import { NavLink, Outlet } from "react-router-dom";
 
 export const Monsters = () => {
   const { state } = useContext(MonsterContext);
+
   return (
     <>
       <section className="Monsters">
@@ -11,9 +12,9 @@ export const Monsters = () => {
         <ul>
           {state.monsters.length ? (
             state.monsters.map((monster) => (
-              <li key={monster.first_name}>
+              <li key={monster.id}>
                 <NavLink
-                  to={`/monsters/${monster.first_name}`}
+                  to={`/monsters/${monster.id}`}
                   style={({ isActive }) =>
                     isActive ? { color: "blue" } : { color: "black" }
                   }
