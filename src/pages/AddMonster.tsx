@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import { MonsterContext } from "../state/MonsterStateContext";
 import { useNavigate } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 
 export const AddMonster = () => {
   const { dispatch } = useContext(MonsterContext);
@@ -32,8 +33,9 @@ export const AddMonster = () => {
 
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
-    // Dispatch an action to add the new monster
-    dispatch({ type: "ADD", payload: monster });
+    const id = uuidv4();
+
+    dispatch({ type: "ADD", payload: { ...monster, id: id } });
     // Clear the form after submission
     setMonster({
       first_name: "",
@@ -52,7 +54,7 @@ export const AddMonster = () => {
       num_mouths: 0,
       num_tails: 0,
     });
-    navigate(`/monsters/${monster.first_name}`);
+    navigate(`/monsters/${id}`);
   };
 
   return (
