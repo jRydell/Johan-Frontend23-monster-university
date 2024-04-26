@@ -12,6 +12,16 @@ export const reducer = (state: MonsterState, action: Action): MonsterState => {
           (monster) => monster.first_name !== action.payload.first_name
         ),
       };
+
+    case "UPDATE":
+      return {
+        ...state,
+        monsters: state.monsters.map((monster) =>
+          monster.first_name === action.payload.first_name
+            ? action.payload.updatedMonster
+            : monster
+        ),
+      };
     default:
       return state;
   }
